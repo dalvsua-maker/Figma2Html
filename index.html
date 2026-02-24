@@ -11,26 +11,35 @@
 <body>
  
 <header class="main-header">
-    <!-- Bloque Izquierda -->
     <div class="header-left">
         <img src="resources/logo.png" alt="Apollo.IA" class="logo-img">
     </div>
-     <div class="header-right-group">
-    <!-- Bloque Centro -->
-    <nav class="nav-links">
-        <a href="#">Servicios</a>
-        <a href="#">Características</a>
-        <a href="#">Cómo funciona</a>
-        <a href="#">Precios</a>
-        <a href="#">Blog</a>
-    </nav>
     
-    <!-- Bloque Derecha -->
-    <div class="header-right">
-        <a href="#" class="btn-primary">Comenzar Gratis</a>
-    </div>
+    <div class="header-right-group">
+        <!-- El Checkbox invisible que controla el estado -->
+        <input type="checkbox" id="menu-toggle-input" class="menu-checkbox">
+        
+        <!-- El Label es el botón de 3 rayas (Hamburguesa) -->
+        <label for="menu-toggle-input" class="menu-btn-label">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
+        <!-- Los enlaces que ahora se ocultarán -->
+        <nav class="nav-links">
+            <a href="#">Servicios</a>
+            <a href="#">Características</a>
+            <a href="#">Cómo funciona</a>
+            <a href="#">Precios</a>
+        </nav>
+        
+        <div class="header-right">
+            <a href="#" class="btn-primary">Comenzar</a>
+        </div>
     </div>
 </header>
+
 <section class="hero">
     <div class="hero-content">
         <h1>Transforma tus imágenes <br> con <span>Inteligencia Artificial</span></h1>
