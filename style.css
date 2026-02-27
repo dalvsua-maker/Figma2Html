@@ -290,7 +290,7 @@ body {
 }
 
 .service-text h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 700;
     color: #1A1A1A;
     margin-bottom: 20px;
@@ -345,9 +345,10 @@ body {
 
 .service-item {
     display: flex;
-    gap: 80px;
+    gap: 50px;
     max-width: 1100px;
     margin: 0 auto 120px auto;
+    margin-bottom: 100px !important;
 
 }
 
@@ -912,13 +913,13 @@ width: 100%;
     }
      /* 1. TÍTULO DE SECCIÓN */
     .services-header h2 {
-        font-size: 2.2rem !important; /* Título más manejable */
-        margin-bottom: 15px;
+     font-size: 2.2rem !important;
+        margin-bottom: 25px !important; 
     }
 
     .services-header p {
         font-size: 1rem !important;
-        margin-bottom: 40px;
+           margin-bottom: 60px;
     }
 
     /* 2. FILAS DE SERVICIOS (Apilado vertical) */
@@ -937,7 +938,7 @@ width: 100%;
 
     /* 3. ICONO Y BOTÓN */
     .service-icon {
-        margin: 0 auto 20px auto !important; /* Centramos el cuadradito morado */
+          margin: 0 auto 30px auto !important; /* Centramos el cuadradito morado */
     }
 
     .btn-service {
@@ -950,6 +951,119 @@ width: 100%;
     /* 4. AJUSTE PARA LA PARTE INVERTIDA */
     .service-reverse .service-image {
         order: -1 !important; /* En móvil, siempre la imagen primero y el texto después */
+    }
+
+    /* 1. FORZAMOS UNA SOLA COLUMNA (El cambio clave) */
+    .features-grid, .steps-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important; /* Una sola tarjeta por fila */
+        gap: 20px !important; /* Espacio vertical entre ellas */
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    /* 2. AJUSTE DE LAS TARJETAS */
+    .feature-card, .step-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 35px 25px !important; /* Más aire interno */
+        box-sizing: border-box !important;
+        text-align: left !important; /* Alineado a la izquierda como en tu diseño */
+    }
+
+    /* 3. TÍTULOS: Ahora tendrán espacio para no cortarse */
+    .feature-card h3, .step-card h4 {
+        font-size: 1.4rem !important;
+        line-height: 1.2 !important;
+        margin: 15px 0 10px 0 !important;
+        white-space: normal !important; /* Permite que el texto baje si es muy largo */
+    }
+
+    /* 4. TEXTO DESCRIPTIVO */
+    .feature-card p, .step-card p {
+        font-size: 0.95rem !important;
+        line-height: 1.5 !important;
+        color: #6B7280 !important;
+    }
+
+    /* 5. ICONOS */
+    .f-icon, .s-icon {
+        margin: 0 0 15px 0 !important; /* Icono a la izquierda */
+    }
+
+ .pricing-section {
+        padding: 60px 20px !important; /* Más aire a los lados */
+    }
+
+    .pricing-container {
+        flex-direction: column !important; /* Una tarjeta sobre la otra */
+        align-items: center !important;
+        gap: 30px !important; /* Espacio entre los dos planes */
+        margin-top: 40px !important;
+    }
+
+    .pricing-card {
+        width: 100% !important; /* Que ocupen todo el ancho disponible */
+        max-width: 350px !important; /* Limitamos para que no se vean gigantes en móviles anchos */
+        padding: 40px 30px !important; /* Reducimos un poco el padding interno */
+        min-height: auto !important; /* Que la altura dependa del contenido */
+    }
+
+    .pricing-card h3 {
+        font-size: 1.3rem !important;
+        margin-bottom: 15px;
+    }
+
+    .pricing-card p {
+        font-size: 1rem !important;
+        margin-bottom: 30px !important;
+    }
+
+    .btn-plan {
+        max-width: 100% !important; /* El botón ocupa todo el ancho de la tarjeta */
+        padding: 14px !important;
+        font-size: 1rem !important;
+    }
+      /* 1. CONTENEDOR PRINCIPAL: Apilamos la marca sobre los enlaces */
+    .footer-container {
+        flex-direction: column !important;
+        gap: 50px !important;
+        text-align: center; /* Centramos el texto de marca para móvil */
+    }
+
+    .footer-brand {
+        max-width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icons {
+        justify-content: center !important; /* Centramos las redes sociales */
+    }
+
+    /* 2. GRUPO DE ENLACES: 2 columnas por fila */
+    .footer-links-group {
+        grid-template-columns: repeat(2, 1fr) !important; /* 2x2 en vez de 4x1 */
+        gap: 40px 20px !important;
+        text-align: left; /* Mantenemos el texto a la izquierda para las columnas */
+    }
+
+    .footer-col h4 {
+        margin-bottom: 15px !important;
+        font-size: 1.1rem;
+    }
+
+    /* 3. LÍNEA FINAL (COPYRIGHT) */
+    .footer-bottom {
+        flex-direction: column !important; /* El copyright arriba y los links abajo */
+        gap: 20px !important;
+        text-align: center;
+        padding-top: 30px !important;
+    }
+
+    .bottom-links {
+        justify-content: center !important;
     }
 }
 
