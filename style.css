@@ -746,14 +746,14 @@ width: 100%;
     text-decoration: none;
     font-size: 0.85rem;
 }
-/* ESTILOS PARA ESCRITORIO (Asegúrate de que el botón no se vea) */
+
 .menu-toggle { display: none; }
-/* --- ESTO VA FUERA DEL MEDIA QUERY (PARA ESCRITORIO) --- */
+
 .menu-checkbox, .menu-btn-label {
-    display: none; /* Oculto siempre en PC */
+    display: none; 
 }
 
-/* FUERA DEL MEDIA QUERY: Ocultamos el botón de menú en PC */
+
 .menu-checkbox, .menu-btn-label { display: none; }
 /* =============================================
    BOTÓN DE TEMA (va siempre, en claro y oscuro)
@@ -931,22 +931,22 @@ body.dark-mode .btn-dark {
     color: #1A1A1A;
 }
 @media (max-width: 768px) {
-    /* 1. Limpieza del Header */
+    
     .main-header {
         display: flex ;
         justify-content: space-between ;
         padding: 10px 15px ;
-        position: relative; /* Importante para posicionar el menú */
+        position: relative; 
         z-index: 1001;
     }
 
-    /* 2. Mostramos las 3 rayas y ocultamos el checkbox */
+    
     .menu-btn-label {
         display: flex ;
         flex-direction: column;
         gap: 4px;
         cursor: pointer;
-        order: 2; /* Lo ponemos entre el logo y el botón */
+        order: 2; 
     }
 
     .menu-checkbox { display: none ; }
@@ -958,11 +958,11 @@ body.dark-mode .btn-dark {
         border-radius: 2px;
     }
 
-    /* 3. EL MENÚ DESPLEGABLE (Oculto por defecto) */
+    
     .nav-links {
-        display: none ; /* Lo quitamos del flujo horizontal */
+        display: none ; 
         position: absolute;
-        top: 60px; /* Justo debajo del header */
+        top: 60px; 
         left: 0;
         width: 100%;
         background: white;
@@ -972,7 +972,7 @@ body.dark-mode .btn-dark {
         z-index: 1000;
     }
 
-    /* 4. EL TRUCO: Al pulsar las rayas, mostramos el menú */
+    
     .menu-checkbox:checked ~ .nav-links {
         display: flex ;
     }
@@ -985,14 +985,14 @@ body.dark-mode .btn-dark {
         color: #333;
     }
 
-    /* 5. Ajuste del botón derecho para que no estorbe */
+    
     .header-right { order: 3; }
     .header-right .btn-primary {
         padding: 6px 12px ;
         font-size: 0.75rem ;
     }
 
-    /* 2. HERO: El título no puede ser tan grande */
+    
     .hero {
         padding: 40px 20px ;
         width: 100% ;
@@ -1001,7 +1001,7 @@ body.dark-mode .btn-dark {
     }
 
     .hero h1 {
-        font-size: 1.5rem ; /* Tamaño drásticamente menor */
+        font-size: 1.5rem ; 
         width: 100% ;
         max-width: 100% ;
         margin: 0 0 20px 0 ;
@@ -1016,7 +1016,7 @@ body.dark-mode .btn-dark {
         margin-bottom: 30px ;
     }
 
-    /* 3. BOTONES: Los centramos y les damos ancho completo */
+    
     .hero-btns {
         flex-direction: column ;
         align-items: center ;
@@ -1032,7 +1032,7 @@ body.dark-mode .btn-dark {
         font-size: 0.95rem ;
         display: block ;
     }
-        /* 1. SECCIÓN COMPARATIVA */
+        
     .showcase {
         padding: 40px 5% !important;
     }
@@ -1042,29 +1042,29 @@ body.dark-mode .btn-dark {
     }
 
     .main-showcase-img {
-        border-radius: 12px !important; /* Bordes un poco más discretos en móvil */
+        border-radius: 12px !important; 
         width: 100% !important;
     }
 
-    /* 2. ESTADÍSTICAS: Las ponemos una debajo de otra */
+    
     .stats-container {
-        flex-direction: column !important; /* De fila a columna */
-        gap: 30px !important; /* Espacio entre cada número */
+        flex-direction: column !important; 
+        gap: 30px !important; 
         padding-top: 30px !important;
         border-top: 1px solid #eee;
     }
 
     .stat-item h2 {
-        font-size: 2rem !important; /* Números un poco más pequeños */
+        font-size: 2rem !important; 
         margin-bottom: 5px;
     }
 
     .stat-item p {
         font-size: 0.9rem !important;
     }
-      /* Reducimos el aire a los lados para que la imagen crezca */
+      
     .showcase {
-        padding: 40px 15px !important; /* Dejamos solo 15px de margen lateral */
+        padding: 40px 15px !important; 
     }
 
     .image-full-container {
@@ -1076,16 +1076,16 @@ body.dark-mode .btn-dark {
         width: 100% !important;
         max-width: 100% !important;
         height: auto !important;
-        border-radius: 16px !important; /* Bordes redondeados más suaves */
+        border-radius: 16px !important; 
         box-shadow: 0 10px 25px rgba(0,0,0,0.08) !important;
     }
 
-    /* Opcional: Centrar un poco más los números para que respiren */
+    
     .stats-container {
         gap: 40px !important;
         padding-top: 40px !important;
     }
-     /* 1. TÍTULO DE SECCIÓN */
+     
     .services-header h2 {
      font-size: 2.2rem !important;
         margin-bottom: 25px !important; 
@@ -1096,13 +1096,13 @@ body.dark-mode .btn-dark {
            margin-bottom: 60px;
     }
 
-    /* 2. FILAS DE SERVICIOS (Apilado vertical) */
+    
     .service-item, .service-reverse {
-        flex-direction: column !important; /* Todo en una columna */
-        gap: 40px !important; /* Espacio entre imagen y texto */
+        flex-direction: column !important; 
+        gap: 40px !important; 
         padding: 0 10px !important;
         margin-bottom: 80px !important;
-        text-align: center; /* Centramos todo para móvil */
+        text-align: center; 
     }
 
     .service-image, .service-text {
@@ -1110,77 +1110,77 @@ body.dark-mode .btn-dark {
         max-width: 100% !important;
     }
 
-    /* 3. ICONO Y BOTÓN */
+    
     .service-icon {
-          margin: 0 auto 30px auto !important; /* Centramos el cuadradito morado */
+          margin: 0 auto 30px auto !important; 
     }
 
     .btn-service {
-        width: 100% !important; /* Botón a ancho completo */
+        width: 100% !important; 
         max-width: 280px;
-        margin: 30px auto 0 auto !important; /* Empuje manual arriba si el auto no llega */
+        margin: 30px auto 0 auto !important; 
         display: block !important;
     }
 
-    /* 4. AJUSTE PARA LA PARTE INVERTIDA */
+    
     .service-reverse .service-image {
-        order: -1 !important; /* En móvil, siempre la imagen primero y el texto después */
+        order: -1 !important; 
     }
 
-    /* 1. FORZAMOS UNA SOLA COLUMNA (El cambio clave) */
+    
     .features-grid, .steps-grid {
         display: grid !important;
-        grid-template-columns: 1fr !important; /* Una sola tarjeta por fila */
-        gap: 20px !important; /* Espacio vertical entre ellas */
+        grid-template-columns: 1fr !important; 
+        gap: 20px !important; 
         width: 100% !important;
         padding: 0 !important;
     }
 
-    /* 2. AJUSTE DE LAS TARJETAS */
+    
     .feature-card, .step-card {
         width: 100% !important;
         max-width: 100% !important;
-        padding: 35px 25px !important; /* Más aire interno */
+        padding: 35px 25px !important; 
         box-sizing: border-box !important;
-        text-align: left !important; /* Alineado a la izquierda como en tu diseño */
+        text-align: left !important; 
     }
 
-    /* 3. TÍTULOS: Ahora tendrán espacio para no cortarse */
+    
     .feature-card h3, .step-card h4 {
         font-size: 1.4rem !important;
         line-height: 1.2 !important;
         margin: 15px 0 10px 0 !important;
-        white-space: normal !important; /* Permite que el texto baje si es muy largo */
+        white-space: normal !important; 
     }
 
-    /* 4. TEXTO DESCRIPTIVO */
+    
     .feature-card p, .step-card p {
         font-size: 0.95rem !important;
         line-height: 1.5 !important;
         color: #6B7280 !important;
     }
 
-    /* 5. ICONOS */
+    
     .f-icon, .s-icon {
-        margin: 0 0 15px 0 !important; /* Icono a la izquierda */
+        margin: 0 0 15px 0 !important; 
     }
 
  .pricing-section {
-        padding: 60px 20px !important; /* Más aire a los lados */
+        padding: 60px 20px !important; 
     }
 
     .pricing-container {
-        flex-direction: column !important; /* Una tarjeta sobre la otra */
+        flex-direction: column !important; 
         align-items: center !important;
-        gap: 30px !important; /* Espacio entre los dos planes */
+        gap: 30px !important; 
         margin-top: 40px !important;
     }
 
     .pricing-card {
-        width: 100% !important; /* Que ocupen todo el ancho disponible */
-        max-width: 350px !important; /* Limitamos para que no se vean gigantes en móviles anchos */
-        padding: 40px 30px !important; /* Reducimos un poco el padding interno */
-        min-height: auto !important; /* Que la altura dependa del contenido */
+        width: 100% !important; 
+        max-width: 350px !important; 
+        padding: 40px 30px !important; 
+        min-height: auto !important; 
     }
 
     .pricing-card h3 {
@@ -1194,15 +1194,15 @@ body.dark-mode .btn-dark {
     }
 
     .btn-plan {
-        max-width: 100% !important; /* El botón ocupa todo el ancho de la tarjeta */
+        max-width: 100% !important; 
         padding: 14px !important;
         font-size: 1rem !important;
     }
-      /* 1. CONTENEDOR PRINCIPAL: Apilamos la marca sobre los enlaces */
+      
     .footer-container {
         flex-direction: column !important;
         gap: 50px !important;
-        text-align: center; /* Centramos el texto de marca para móvil */
+        text-align: center; 
     }
 
     .footer-brand {
@@ -1213,14 +1213,14 @@ body.dark-mode .btn-dark {
     }
 
     .social-icons {
-        justify-content: center !important; /* Centramos las redes sociales */
+        justify-content: center !important; 
     }
 
-    /* 2. GRUPO DE ENLACES: 2 columnas por fila */
+    
     .footer-links-group {
-        grid-template-columns: repeat(2, 1fr) !important; /* 2x2 en vez de 4x1 */
+        grid-template-columns: repeat(2, 1fr) !important; 
         gap: 40px 20px !important;
-        text-align: left; /* Mantenemos el texto a la izquierda para las columnas */
+        text-align: left; 
     }
 
     .footer-col h4 {
@@ -1228,9 +1228,9 @@ body.dark-mode .btn-dark {
         font-size: 1.1rem;
     }
 
-    /* 3. LÍNEA FINAL (COPYRIGHT) */
+    
     .footer-bottom {
-        flex-direction: column !important; /* El copyright arriba y los links abajo */
+        flex-direction: column !important; 
         gap: 20px !important;
         text-align: center;
         padding-top: 30px !important;
