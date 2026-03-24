@@ -954,7 +954,16 @@ body.dark-mode .btn-dark {
         border-radius: 2px;
     }
 
-    
+    .theme-btn {
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+    line-height: 1;
+}
     .nav-links {
         display: none ; 
         position: absolute;
@@ -982,12 +991,18 @@ body.dark-mode .btn-dark {
     }
 
     
-    .header-right { order: 3; }
+    .header-right { order: 3;
+     }
     .header-right .btn-primary {
         padding: 6px 12px ;
         font-size: 0.75rem ;
     }
-
+.header-right-group {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+}
     
     .hero {
         padding: 40px 20px ;
