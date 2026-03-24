@@ -6,7 +6,8 @@
     <title>Apollo.IA - Transforma tus imágenes</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com' rel='stylesheet'>
-
+<!-- jQuery: la librería que nos permite usar su sintaxis simplificada -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
  
@@ -25,7 +26,10 @@
             <span class="bar"></span>
             <span class="bar"></span>
         </label>
-
+<!-- Botón de alternancia: empieza mostrando la luna (modo claro activo) -->
+<button id="theme-toggle" class="theme-btn" title="Cambiar tema">
+    <span id="theme-icon">🌙</span>
+</button>
         <!-- Los enlaces que ahora se ocultarán -->
         <nav class="nav-links">
             <a href="#">Servicios</a>
@@ -297,6 +301,7 @@
         </div>
     </div>
 </footer>
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

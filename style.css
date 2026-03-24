@@ -755,7 +755,181 @@ width: 100%;
 
 /* FUERA DEL MEDIA QUERY: Ocultamos el botón de menú en PC */
 .menu-checkbox, .menu-btn-label { display: none; }
+/* =============================================
+   BOTÓN DE TEMA (va siempre, en claro y oscuro)
+   ============================================= */
+.theme-btn {
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+    line-height: 1;
+}
 
+.theme-btn:hover {
+    background: rgba(124, 92, 255, 0.08);
+    border-color: #7C5CFF;
+}
+
+/* =============================================
+   DARK MODE: todo lo que cambia cuando el <body>
+   tiene la clase "dark-mode"
+   ============================================= */
+
+/* El selector "body.dark-mode .clase" significa:
+   "aplica esto SOLO cuando body tenga la clase dark-mode" */
+
+body.dark-mode {
+    background-color: #0f0f13;
+    color: #e5e7eb;
+}
+
+/* HEADER */
+body.dark-mode .main-header {
+    background-color: #1a1a24;
+    border-bottom: 1px solid #2a2a3a;
+}
+
+body.dark-mode .nav-links a {
+    color: #c4c4d4;
+}
+
+body.dark-mode .theme-btn {
+    border-color: #3a3a4a;
+    color: #e5e7eb;
+}
+
+/* MENÚ MÓVIL */
+body.dark-mode .nav-links {
+    background: #1a1a24;
+}
+
+body.dark-mode .nav-links a {
+    border-bottom-color: #2a2a3a;
+}
+
+body.dark-mode .bar {
+    background-color: #e5e7eb;
+}
+
+/* HERO */
+body.dark-mode .hero {
+    background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+}
+
+body.dark-mode .hero h1 {
+    color: #f0f0f0;
+}
+
+body.dark-mode .hero-description {
+    color: #9ca3af;
+}
+
+body.dark-mode .btn-outline {
+    color: #e5e7eb;
+    border-color: #3a3a4a;
+}
+
+body.dark-mode .btn-outline:hover {
+    background-color: #2a2a3a;
+}
+
+/* SHOWCASE (estadísticas) */
+body.dark-mode .showcase {
+    background-color: #13131d;
+}
+
+body.dark-mode .stats-container {
+    border-top-color: #2a2a3a;
+}
+
+body.dark-mode .stat-item h2 {
+    color: #f0f0f0;
+}
+
+/* SECCIÓN DE SERVICIOS */
+body.dark-mode .services-section {
+    background-color: #1a1a2e;
+}
+
+body.dark-mode .services-header h2,
+body.dark-mode .service-text h3 {
+    color: #f0f0f0;
+}
+
+body.dark-mode .services-header p,
+body.dark-mode .service-text p {
+    color: #9ca3af;
+}
+
+/* TARJETAS DE CARACTERÍSTICAS */
+body.dark-mode .info-section {
+    background-color: #0f0f13;
+}
+
+body.dark-mode .section-title {
+    color: #f0f0f0;
+}
+
+body.dark-mode .section-subtitle {
+    color: #9ca3af;
+}
+
+body.dark-mode .feature-card {
+    background-color: #1a1a24;
+    border-color: #2a2a3a;
+}
+
+body.dark-mode .feature-card h3 {
+    color: #f0f0f0;
+}
+
+body.dark-mode .feature-card p {
+    color: #9ca3af;
+}
+
+/* PASOS (Cómo funciona) */
+body.dark-mode .how-it-works {
+    background-color: #13131d;
+}
+
+body.dark-mode .step-card {
+    background-color: #1a1a24;
+    border-color: #2a2a3a;
+}
+
+body.dark-mode .step-card h4 {
+    color: #f0f0f0;
+}
+
+body.dark-mode .step-card p {
+    color: #9ca3af;
+}
+
+/* PRECIOS */
+body.dark-mode .pricing-section {
+    background-color: #0f0f13;
+}
+
+body.dark-mode .pricing-card {
+    background-color: #1a1a24;
+    border-color: #2a2a3a;
+}
+
+body.dark-mode .pricing-card h3 {
+    color: #f0f0f0;
+}
+
+body.dark-mode .pricing-card p {
+    color: #9ca3af;
+}
+body.dark-mode .btn-dark {
+    background-color: white;
+    color: #1A1A1A;
+}
 @media (max-width: 768px) {
     /* 1. Limpieza del Header */
     .main-header {
