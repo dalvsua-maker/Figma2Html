@@ -19,5 +19,19 @@ $(document).ready(function () {
             localStorage.setItem('theme', 'light');
         }
     });
-
+   $.getJSON("https://randomuser.me/api/", function (data) {
+      console.log(data);
+      $(".users-card").html(
+        "<p>Nombre: " +
+          data.results[0].name.first +
+          " " +
+          data.results[0].name.last +
+          "</p>",
+      );
+      $(".users-card").append("<p>Telefono: " + data.results[0].phone + "</p>");
+      $(".users-card").append("<p>Correo: " + data.results[0].email + "</p>");
+      $(".users-card").append(
+        "<img src=" + data.results[0].picture.large + ">",
+      );
+    });
 });
